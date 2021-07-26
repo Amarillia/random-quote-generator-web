@@ -1,0 +1,121 @@
+// Variables
+
+/* Color Theme Swatches in Hex */
+$golden-teeth-1-hex: #732735;
+$golden-teeth-2-hex: #D95970;
+$golden-teeth-3-hex: #F2ACB2;
+$golden-teeth-4-hex: #F2E9E4;
+$golden-teeth-5-hex: #BF926B;
+$white: #fff;
+
+/* Color Theme Swatches in Hex */
+$Inspiration-quote-v-1-hex: #73020C;
+$Inspiration-quote-v-2-hex: #BF787E;
+$Inspiration-quote-v-3-hex: #8C0303;
+$Inspiration-quote-v-4-hex: #F2F2F2;
+$Inspiration-quote-v-5-hex: #0D0D0D;
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+    background-color: $golden-teeth-4-hex;
+    color: $white;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    text-align: center;
+    padding: 1%;
+    color: $Inspiration-quote-v-3-hex;
+}
+
+#quote-box {
+    padding: 50px;
+    animation: fadeIn 0.3s;
+
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.container {
+    position: relative;
+    margin: 35px auto;
+}
+
+.quote-container {
+    color: $Inspiration-quote-v-3-hex;
+    min-height: 300px;
+    height: 100%;
+    background-color: $Inspiration-quote-v-4-hex;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+    list-style: none;
+    color: $golden-teeth-1-hex;
+}
+
+
+.jumbotron {
+    padding: 30px;
+    color: $golden-teeth-1-hex;
+    font-size: 20px;
+    border: 2px solid $golden-teeth-2-hex;
+    border-radius: 20px;
+}
+
+.btn.btn-primary {
+    display: block;
+    background-color: #D95970;
+    color: $white;
+    margin: auto;
+    border: none;
+    padding: 10px 15px 10px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    padding: 20px 25px;
+    font-size: 20px;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .fa-twitter-square {
+        color: $golden-teeth-2-hex;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    #quote-box {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #quote-box {
+        padding: 20px 10px;
+    }
+}
